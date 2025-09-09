@@ -1,0 +1,55 @@
+<!-- Demo HTML -->
+<!doctype 
+     html>
+<html 
+    lang="en">
+<head>
+         <meta 
+             charset="UTF-8">
+         <meta 
+             name="viewport" 
+             content="width=device-width, initial-scale=1.0">
+         <link 
+             rel="stylesheet" 
+             href="Demo.css">
+        <title>Did you know?🤔</title>
+</head>
+
+    <body>
+        <h1>Please Enter your Name</h1>
+        <input 
+             type="text" 
+             id="username"
+             placeholder="Username" 
+             required
+             maxlength="6">
+        </div>
+        <button 
+             onclick="writeLoveLetter()"
+             aria-required="true">Submit</button>
+        <div 
+             id="typemessage" 
+             class="letter"></div>
+
+  <script>
+    function writeLoveLetter() {
+      const name = document.getElementById("username").value.trim() || "Aking Mahal";
+      const letter = `Mahal kong ${name},\n\nSimula na dumating ka sa buhay ko, ang bawat araw ay naging mas makulay at puno ng saya. Ang iyong ngiti ay nagbibigay liwanag sa aking mundo, at ang iyong tawa ay musika sa aking mga tainga. Sa bawat sandali na magkasama tayo, nararamdaman ko ang tunay na kahulugan ng pagmamahal.\n\nIkaw ang aking inspirasyon, ang aking lakas, at ang aking tahanan. Sa bawat hamon na ating hinaharap, alam kong kaya nating lampasan ito basta't magkasama tayo. Ang iyong presensya ay nagbibigay sa akin ng kapayapaan at katiyakan na hindi ko kailanman mararamdaman kung wala ka.\n\nMahal kita higit pa sa mga salita, higit pa sa mga bituin sa langit. Ikaw ang aking pangarap na naging realidad, at hindi ko maipaliwanag kung gaano ako kaswerte na ikaw ay akin.\n\nNagmamahal.`;
+
+      const container = document.getElementById("typemessage");
+      container.textContent = ""; 
+      let i = 0;
+
+      function type() {
+        if (i < letter.length) {
+          container.textContent += letter.charAt(i);
+          i++;
+          setTimeout(type, 50);
+        }
+      }
+
+      type();
+    }
+  </script>
+</body>
+</html>

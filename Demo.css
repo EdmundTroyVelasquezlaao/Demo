@@ -1,0 +1,57 @@
+/* Demo CSS */
+body {
+      font-family: "Georgia", serif;
+      background: #fff0f5;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      padding: 20px;
+    }
+
+h1 {
+        color: #880e4f;
+        margin-bottom: 20px;
+        font-family: sans-serif;
+}
+input {
+      padding: 10px;
+      font-size: 1.1em;
+      border: 2px solid #e91e63;
+      border-radius: 6px;
+      margin-bottom: 15px;
+      width: 250px;
+      text-align: center;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, monospace;
+      color: #880e4f;
+    }
+
+button {
+      padding: 10px 20px;
+      font-size: 1em;
+      border: none;
+      border-radius: 6px;
+      background: #e91e63;
+      color: white;
+      cursor: pointer;
+      margin-bottom: 20px;
+      font-family: 'Courier New', Courier, monospace, sans-serif;
+      
+    }    
+button:active {
+      background: #880e4f;
+    }
+
+.letter {
+      font-size: 1.2em;
+      color: #880e4f;
+      max-width: 600px;
+      white-space: pre-wrap;
+      border: 2px solid #e91e63;
+      border-radius: 10px;
+      padding: 20px;
+      background: #fff;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+      font-family: "Courier New", Courier, monospace;
+    }
